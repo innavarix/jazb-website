@@ -166,10 +166,11 @@ h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;color:in
 .research-stats strong{
   display:block;
   font-family:"Segoe UI",Inter,Arial,sans-serif;
-  font-size:1.05rem;
-  line-height:1.15;
+  font-size:.82rem;
+  line-height:1.25;
   font-weight:700;
-  letter-spacing:.035em;
+  letter-spacing:.08em;
+  text-transform:uppercase;
   color:#315f7b;
 }
 
