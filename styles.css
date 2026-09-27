@@ -277,3 +277,37 @@ h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;color:in
   .architecture-diagram{margin-top:30px;overflow-x:auto}
   .architecture-diagram img{min-width:780px;max-width:none}
 }
+
+
+/* =========================================================
+   HOME HERO VIDEO BACKGROUND
+   ========================================================= */
+
+.hero-video-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #243C4C;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: center center;
+}
+
+.hero .light-wash {
+  z-index: 1;
+}
+
+.hero .hero-copy {
+  position: relative;
+  z-index: 2;
+}
