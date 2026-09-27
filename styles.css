@@ -21,7 +21,7 @@ img{max-width:100%}
 
 .site-header{height:var(--header);padding:8px clamp(28px,4vw,72px);display:flex;align-items:center;gap:32px;position:sticky;top:0;z-index:100;background:rgba(15,25,33,.975);border-bottom:1px solid rgba(172,188,191,.18);backdrop-filter:blur(16px)}
 .brand{width:250px;flex:0 0 250px}
-.brand img{display:block;width:100%;height:auto;filter:saturate(.2) hue-rotate(160deg) brightness(1.35)}
+.brand img{display:block;width:100%;height:auto}
 .primary-nav{margin-left:auto;display:flex;gap:clamp(18px,2vw,34px)}
 .primary-nav a{font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#dce6e9;padding:10px 0;border-bottom:1px solid transparent;transition:.2s}
 .primary-nav a:hover,.primary-nav a[aria-current="page"]{color:#fff;border-color:var(--blue)}
