@@ -322,3 +322,17 @@ h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;color:in
 #traceability,#v1-2{scroll-margin-top:110px}
 @media(max-width:1000px){.views-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.level-grid,.views-grid{grid-template-columns:1fr}.release-callout{font-size:.85rem}}
+
+/* Dark publication sections follow the Research card palette. */
+.library-frame.frame-dark .publication-card{
+  background:rgba(12,25,34,.18);
+  border-color:rgba(244,252,251,.18);
+}
+.library-frame.frame-dark .publication-card h3{color:#f4fcfb}
+.library-frame.frame-dark .publication-card p{color:#c7d8dd}
+.library-frame.frame-dark .card-meta{color:#bbced5}
+.library-frame.frame-dark .text-link{color:#a9d3e6}
+.library-frame.frame-dark .reference-note{
+  background:rgba(12,25,34,.16);
+  color:#c7d8dd;
+}
