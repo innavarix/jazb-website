@@ -341,3 +341,25 @@ h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;color:in
 @media(max-width:620px){
   .hero .hero-review-button{min-height:52px;padding:12px 18px;font-size:.82rem}
 }
+
+/* Framework family overview pages: readable light cards and balanced layout. */
+.framework-family-page .mechanism-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.framework-family-page .frame-light .mechanism-grid article{
+  background:rgba(255,255,255,.82);
+  border-color:rgba(36,60,76,.22);
+}
+.framework-family-page .frame-light .mechanism-grid h3{
+  color:#243c4c;
+}
+.framework-family-page .frame-light .mechanism-grid p{
+  color:#385466;
+}
+.framework-family-page .frame-light .boundary-note{
+  background:rgba(255,255,255,.8);
+  color:#2f4858;
+}
+@media(max-width:800px){
+  .framework-family-page .mechanism-grid{grid-template-columns:1fr}
+}
