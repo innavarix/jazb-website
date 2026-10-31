@@ -400,3 +400,16 @@ h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;color:in
   .terms-hero{min-height:500px}
   .terms-guidance{grid-template-columns:1fr}
 }
+
+
+/* Mobile footer/icon guard and fully visible compact navigation.
+   HTML references a versioned stylesheet URL to bypass stale mobile caches. */
+.footer-social-link svg{width:20px;height:20px;min-width:20px;max-width:20px;min-height:20px;max-height:20px;flex:0 0 20px}
+@media(max-width:620px){
+  .site-header{gap:10px;padding:10px 16px 12px}
+  .primary-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;gap:4px 8px;overflow:visible;margin-left:0}
+  .primary-nav a{display:block;text-align:center;padding:8px 2px;white-space:normal;font-size:.58rem;letter-spacing:.055em;line-height:1.35}
+}
+@media(max-width:350px){
+  .primary-nav{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
