@@ -210,10 +210,31 @@ h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;color:in
 .about-grid article{padding:25px;border:1px solid rgba(244,252,251,.16);background:rgba(12,25,34,.17);min-height:145px}
 .about-grid strong{display:block;margin-top:12px;color:#f4fcfb;font:400 1.15rem/1.35 Georgia,serif}
 
-.site-footer{min-height:92px;padding:28px clamp(30px,6vw,112px);display:flex;align-items:center;gap:22px;background:var(--bar);color:#9fb1b8;font-size:.76rem;border-top:1px solid rgba(172,188,191,.16);flex-wrap:wrap}
-.footer-brand{color:#fff;font-weight:900;letter-spacing:.14em;font-size:1.25rem}
-.footer-doi{color:#b8d1da}
-.copyright{margin-left:auto}
+/* Shared footer navigation and official social links. */
+.site-footer{display:block;padding:54px clamp(30px,6vw,112px) 24px;background:var(--bar);color:#b8c8ce;border-top:1px solid rgba(172,188,191,.18);font-size:.85rem}
+.footer-inner{width:100%;max-width:var(--max);margin:0 auto}
+.footer-main{display:grid;grid-template-columns:minmax(235px,1.6fr) repeat(3,minmax(140px,1fr));gap:36px clamp(24px,3.2vw,70px)}
+.footer-name{margin:0 0 16px;color:var(--ice);font-size:1.04rem;line-height:1.5;font-weight:700}
+.footer-intro>p:last-child{max-width:330px;margin:0;font-size:.85rem;line-height:1.7;color:#a8bdc5}
+.footer-column{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0}
+.footer-column h2{margin:0 0 6px;color:var(--ice);font:700 .8rem/1.5 "Segoe UI",Inter,Arial,sans-serif;letter-spacing:.04em}
+.footer-column a{color:#bfd0d6;font-size:.83rem;line-height:1.5;transition:color .2s}
+.footer-column a:hover,.footer-column a:focus-visible{color:#fff}
+.footer-column a:focus-visible{outline:2px solid var(--blue);outline-offset:4px;border-radius:2px}
+.footer-social-link{display:inline-flex;align-items:center;gap:10px}
+.footer-social-link svg{display:block;width:19px;height:19px;flex:0 0 19px}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:48px;padding-top:20px;border-top:1px solid rgba(172,188,191,.18);font-size:.74rem;line-height:1.6;color:#94aab4}
+@media(max-width:1050px){
+  .footer-main{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .footer-intro{grid-column:1/-1}
+  .footer-intro>p:last-child{max-width:530px}
+}
+@media(max-width:620px){
+  .site-footer{padding-top:44px}
+  .footer-main{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:22px}
+  .footer-follow{grid-column:1/-1}
+  .footer-bottom{align-items:flex-start;flex-direction:column;margin-top:36px}
+}
 .error-page{min-height:calc(100svh - var(--header))}
 
 @media(max-width:1150px){
@@ -269,8 +290,6 @@ h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;color:in
   .branch-flow span{text-align:center}
   .research-stats{grid-template-columns:1fr;width:100%;max-width:none}
   .research-stats span{min-width:0}
-  .site-footer{align-items:flex-start;flex-direction:column}
-  .copyright{margin-left:0}
 }
 
 @media(max-width:680px){
@@ -362,4 +381,22 @@ h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;color:in
 }
 @media(max-width:800px){
   .framework-family-page .mechanism-grid{grid-template-columns:1fr}
+}
+
+
+/* Publication license display. Canonical legal wording is contained in the HTML. */
+.terms-hero{min-height:clamp(460px,65vh,650px)}
+.terms-hero .page-title{font-size:clamp(3.5rem,6vw,6rem)}
+.terms-content{width:100%}
+.terms-license{max-width:910px;padding:clamp(28px,4vw,52px);border:1px solid rgba(172,188,191,.28);background:rgba(12,25,34,.24)}
+.terms-license h2{margin:0 0 28px;color:#f6fbfc;font-size:clamp(1.9rem,3.5vw,3.2rem);line-height:1.12}
+.terms-license p{margin:0 0 20px;color:#dae6e9;font-size:1.05rem;line-height:1.85}
+.terms-license p:last-child{margin-bottom:0}
+.terms-guidance{max-width:910px;margin-top:34px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.terms-guidance article{padding:26px;border:1px solid rgba(172,188,191,.2);background:rgba(12,25,34,.14)}
+.terms-guidance h3{font:400 1.35rem/1.3 Georgia,serif;color:#f6fbfc}
+.terms-guidance p{margin:13px 0 0;color:#c7d8dd;line-height:1.7;font-size:.94rem}
+@media(max-width:680px){
+  .terms-hero{min-height:500px}
+  .terms-guidance{grid-template-columns:1fr}
 }
