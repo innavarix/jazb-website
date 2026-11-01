@@ -413,3 +413,33 @@ h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;color:in
 @media(max-width:350px){
   .primary-nav{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+
+
+/* v3.0.0 configuration cards: align dark section with existing JAZB mechanism palette. */
+#configurations .principle-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  align-items:stretch;
+}
+#configurations .principle-grid article{
+  min-height:175px;
+  padding:28px;
+  background:rgba(12,25,34,.28);
+  border:1px solid rgba(244,252,251,.20);
+  border-left:3px solid #8eb5ca;
+}
+#configurations .principle-grid h3{
+  margin-top:0;
+  color:#f4fcfb;
+}
+#configurations .principle-grid p{
+  color:#c7d8dd;
+  line-height:1.68;
+}
+@media(max-width:800px){
+  #configurations .principle-grid{
+    grid-template-columns:1fr;
+  }
+  #configurations .principle-grid article{
+    min-height:0;
+  }
+}
