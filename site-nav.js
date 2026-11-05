@@ -1,2 +1,16 @@
-/* Keyboard and touch controls for JAZB navigation. */
-(()=>{const items=[...document.querySelectorAll('.nav-item.has-menu')];for(const item of items){const button=item.querySelector('.nav-toggle');button.addEventListener('click',()=>{const open=!item.classList.contains('is-open');for(const other of items){other.classList.remove('is-open');other.querySelector('.nav-toggle').setAttribute('aria-expanded','false')}item.classList.toggle('is-open',open);button.setAttribute('aria-expanded',String(open))})}document.addEventListener('click',event=>{if(event.target.closest('.nav-item.has-menu'))return;for(const item of items){item.classList.remove('is-open');item.querySelector('.nav-toggle').setAttribute('aria-expanded','false')}});document.addEventListener('keydown',event=>{if(event.key!=='Escape')return;for(const item of items){item.classList.remove('is-open');item.querySelector('.nav-toggle').setAttribute('aria-expanded','false')}})})();
+/* Clean JAZB navigation: hover/focus desktop; first tap opens submenu on touch. */
+(()=>{
+ const items=[...document.querySelectorAll('.nav-item.has-menu')];
+ const close=()=>{for(const item of items){item.classList.remove('is-open');const b=item.querySelector('.nav-toggle');if(b)b.setAttribute('aria-expanded','false')}};
+ for(const item of items){
+  const link=item.querySelector(':scope > a');
+  link.setAttribute('aria-haspopup','true');
+  link.addEventListener('click',event=>{
+   const touch=window.matchMedia('(hover: none), (pointer: coarse)').matches;
+   if(!touch)return;
+   if(!item.classList.contains('is-open')){event.preventDefault();close();item.classList.add('is-open')}
+  });
+ }
+ document.addEventListener('click',event=>{if(!event.target.closest('.nav-item.has-menu'))close()});
+ document.addEventListener('keydown',event=>{if(event.key==='Escape')close()});
+})();
