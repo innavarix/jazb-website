@@ -6,7 +6,7 @@
 
 /* JAZB staging hero: restored light/frosted tops with left-anchored copy. */
 .hero{background-color:#eaf4f6;background-image:url('/assets/frosted-aura.png');}
-.hero:before{background:linear-gradient(90deg,rgba(245,251,251,.97) 0%,rgba(241,248,249,.91) 49%,rgba(236,246,249,.38) 100%);}
+.hero:before,.hero.is-light:before{background:linear-gradient(90deg,rgba(244,252,251,.95) 0%,rgba(244,252,251,.82) 40%,rgba(244,252,251,.28) 68%,rgba(244,252,251,.04) 100%),linear-gradient(0deg,rgba(244,252,251,.16),transparent 46%);}
 .hero>.container{width:100%;max-width:none;margin:0;padding:0 clamp(30px,6vw,112px);text-align:left;}
 .hero h1{max-width:940px;color:#193446;}
 .hero h1 em{color:#2a729b;}
