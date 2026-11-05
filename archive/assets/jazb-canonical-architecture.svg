@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">JAZB Canonical Governance Architecture</title>
+  <desc id="desc">Enterprise Domain Authority establishes the human sovereign root. Authority flows to Governor Law, then branches into separate Internal and Border Jurisdictions. Internal Jurisdiction flows through Judge, Commissioner, and AGENT, with AGENT interfacing with humans and enterprise infrastructure. Border Jurisdiction flows through Port Authority, Port Director, and Customs AGENT, with Customs AGENT interfacing with external actors and transit infrastructure.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#5289AD"/>
+    </marker>
+  </defs>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="350" y="18" width="500" height="84" rx="3" fill="#F4FCFB" fill-opacity="0.86" stroke="#8FA6B3"/>
+    <text x="378" y="48" font-size="13" font-weight="700" letter-spacing="2.3" fill="#5289AD">HUMAN SOVEREIGN ROOT</text>
+    <text x="378" y="79" font-size="26" font-family="Georgia, 'Times New Roman', serif" fill="#243C4C">Enterprise Domain Authority</text>
+
+    <line x1="600" y1="102" x2="600" y2="136" stroke="#5289AD" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <rect x="350" y="148" width="500" height="84" rx="3" fill="#F4FCFB" fill-opacity="0.88" stroke="#5289AD" stroke-width="1.5"/>
+    <text x="378" y="178" font-size="13" font-weight="700" letter-spacing="2.3" fill="#5289AD">HUMAN-ESTABLISHED LAW</text>
+    <text x="378" y="209" font-size="26" font-family="Georgia, 'Times New Roman', serif" fill="#243C4C">Governor</text>
+
+    <line x1="600" y1="232" x2="600" y2="276" stroke="#5289AD" stroke-width="2.5"/>
+    <circle cx="600" cy="276" r="4" fill="#5289AD"/>
+    <path d="M600 276 H285 V315" fill="none" stroke="#5289AD" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <path d="M600 276 H915 V315" fill="none" stroke="#5289AD" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <rect x="20" y="330" width="530" height="360" rx="3" fill="#F4FCFB" fill-opacity="0.72" stroke="#A9BAC3"/>
+    <text x="48" y="362" font-size="13" font-weight="700" letter-spacing="2.2" fill="#5289AD">INTERNAL JURISDICTION</text>
+    <text x="48" y="388" font-size="14" fill="#526B79">Interpretation, local Law, and bounded operation</text>
+
+    <rect x="55" y="425" width="125" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
+    <text x="117.5" y="459" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1" fill="#243C4C">JUDGE</text>
+    <line x1="180" y1="454" x2="219" y2="454" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="230" y="425" width="140" height="58" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="300" y="459" text-anchor="middle" font-size="13" font-weight="800" letter-spacing=".7" fill="#243C4C">COMMISSIONER</text>
+    <line x1="370" y1="454" x2="409" y2="454" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="420" y="425" width="95" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
+    <text x="467.5" y="459" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1" fill="#243C4C">AGENT</text>
+
+    <text x="55" y="522" font-size="12" font-weight="700" letter-spacing="1.2" fill="#698696">AI INTERPRETATION</text>
+    <text x="230" y="522" font-size="12" font-weight="700" letter-spacing="1.2" fill="#698696">HUMAN LAW</text>
+    <text x="420" y="522" font-size="12" font-weight="700" letter-spacing="1.2" fill="#698696">AI OPERATION</text>
+
+    <line x1="467.5" y1="483" x2="467.5" y2="560" stroke="#5289AD" stroke-width="2"/>
+    <circle cx="467.5" cy="560" r="3.5" fill="#5289AD"/>
+    <path d="M467.5 560 H165 V592" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M467.5 560 H405 V592" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="55" y="602" width="220" height="60" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="165" y="627" text-anchor="middle" font-size="11" font-weight="800" letter-spacing=".8" fill="#243C4C">HUMAN INTERFACE</text>
+    <text x="165" y="646" text-anchor="middle" font-size="10" fill="#698696">End users • Operators</text>
+
+    <rect x="295" y="602" width="220" height="60" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="405" y="625" text-anchor="middle" font-size="10.8" font-weight="800" letter-spacing=".55" fill="#243C4C">ENTERPRISE INFRASTRUCTURE</text>
+    <text x="405" y="646" text-anchor="middle" font-size="10" fill="#698696">Systems • Network • Services</text>
+
+    <rect x="650" y="330" width="530" height="360" rx="3" fill="#F4FCFB" fill-opacity="0.72" stroke="#A9BAC3"/>
+    <text x="678" y="362" font-size="13" font-weight="700" letter-spacing="2.2" fill="#5289AD">BORDER JURISDICTION</text>
+    <text x="678" y="388" font-size="14" fill="#526B79">Interpretation, border Law, inspection, and lawful passage</text>
+
+    <rect x="675" y="425" width="125" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
+    <text x="737.5" y="451" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".6" fill="#243C4C">PORT</text>
+    <text x="737.5" y="468" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".6" fill="#243C4C">AUTHORITY</text>
+    <line x1="800" y1="454" x2="829" y2="454" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="840" y="425" width="125" height="58" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="902.5" y="451" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".6" fill="#243C4C">PORT</text>
+    <text x="902.5" y="468" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".6" fill="#243C4C">DIRECTOR</text>
+    <line x1="965" y1="454" x2="994" y2="454" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="1005" y="425" width="125" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
+    <text x="1067.5" y="451" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".5" fill="#243C4C">CUSTOMS</text>
+    <text x="1067.5" y="468" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".5" fill="#243C4C">AGENT</text>
+
+    <text x="675" y="522" font-size="11" font-weight="700" letter-spacing="1.1" fill="#698696">AI INTERPRETATION</text>
+    <text x="840" y="522" font-size="11" font-weight="700" letter-spacing="1.1" fill="#698696">HUMAN LAW</text>
+    <text x="1067.5" y="515" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="1.0" fill="#698696">AI INSPECTION</text>
+    <text x="1067.5" y="529" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="1.0" fill="#698696">&amp; ENFORCEMENT</text>
+
+    <line x1="1067.5" y1="483" x2="1067.5" y2="560" stroke="#5289AD" stroke-width="2"/>
+    <circle cx="1067.5" cy="560" r="3.5" fill="#5289AD"/>
+    <path d="M1067.5 560 H795 V592" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M1067.5 560 H1035 V592" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="685" y="602" width="220" height="60" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="795" y="627" text-anchor="middle" font-size="11" font-weight="800" letter-spacing=".8" fill="#243C4C">EXTERNAL INTERFACE</text>
+    <text x="795" y="646" text-anchor="middle" font-size="10" fill="#698696">Users • Services • Partners</text>
+
+    <rect x="925" y="602" width="220" height="60" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="1035" y="625" text-anchor="middle" font-size="10.8" font-weight="800" letter-spacing=".55" fill="#243C4C">TRANSIT INFRASTRUCTURE</text>
+    <text x="1035" y="646" text-anchor="middle" font-size="10" fill="#698696">Network • Edge • ISP</text>
+  </g>
+</svg>
