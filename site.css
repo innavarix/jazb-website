@@ -37,16 +37,26 @@
 @media(max-width:980px){.nav{flex-wrap:wrap;gap:5px 20px}.nav-menu{top:100%;left:0}}
 @media(max-width:680px){.nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;gap:5px 10px}.nav-item{min-width:0}.nav-item>a,.nav>a{font-size:.7rem}.nav-menu{top:100%;left:0;min-width:min(280px,82vw)}}
 
-/* Temporary reflection hero until the new Arctic Aura asset is uploaded. */
-.hero,.hero.is-light{background-color:#102637;background-image:url('/assets/arctic-reflection.png');background-position:center 49%;background-size:cover}
-.hero:before,.hero.is-light:before{background:linear-gradient(90deg,rgba(5,18,30,.95) 0%,rgba(7,24,38,.86) 43%,rgba(9,28,43,.42) 73%,rgba(9,28,43,.12) 100%)}
-.hero h1,.hero.is-light h1{color:#f0f8fc}
-.hero h1 em,.hero.is-light h1 em{color:#9ed4f6}
-.hero .hero-intro,.hero.is-light .hero-intro{color:#dce9f0}
-.hero .kicker,.hero.is-light .kicker{color:#a5d6f2}
-.hero .button,.hero.is-light .button{color:#ecf7fd;border-color:#8ab9d3;background:rgba(9,30,45,.32)}
-.hero .button.primary,.hero.is-light .button.primary{background:#8bc0e1;color:#10283a;border-color:#8bc0e1}
-.hero .button.primary:hover,.hero.is-light .button.primary:hover{background:#b1d9ef}
+/* Site-wide frosted aura. Dedicated framework pages override this background. */
+.hero,.hero.is-light{background-color:#eaf4f6;background-image:url('/assets/frosted-aura.png');background-position:center 49%;background-size:cover}
+.hero:before,.hero.is-light:before{background:linear-gradient(90deg,rgba(244,252,251,.95) 0%,rgba(244,252,251,.82) 40%,rgba(244,252,251,.28) 68%,rgba(244,252,251,.04) 100%),linear-gradient(0deg,rgba(244,252,251,.16),transparent 46%)}
+.hero h1,.hero.is-light h1{color:#193446}
+.hero h1 em,.hero.is-light h1 em{color:#2a729b}
+.hero .hero-intro,.hero.is-light .hero-intro{color:#385362}
+.hero .kicker,.hero.is-light .kicker{color:#326c8d}
+.hero .button,.hero.is-light .button{color:#20516d;border-color:#5994b7;background:rgba(255,255,255,.5)}
+.hero .button.primary,.hero.is-light .button.primary{background:#286c92;color:#fff;border-color:#286c92}
+.hero .button.primary:hover,.hero.is-light .button.primary:hover{background:#1d5375}
+/* Cybersecurity uses Arctic Reflection; AI v3 uses that same existing asset only as a temporary fallback. */
+.hero.cyber-hero,.hero.ai-hero{background-color:#102637;background-image:url('/assets/arctic-reflection.png')}
+.hero.cyber-hero:before,.hero.ai-hero:before{background:linear-gradient(90deg,rgba(5,18,30,.95) 0%,rgba(7,24,38,.86) 43%,rgba(9,28,43,.42) 73%,rgba(9,28,43,.12) 100%)}
+.hero.cyber-hero h1,.hero.ai-hero h1{color:#f0f8fc}
+.hero.cyber-hero h1 em,.hero.ai-hero h1 em{color:#9ed4f6}
+.hero.cyber-hero .hero-intro,.hero.ai-hero .hero-intro{color:#dce9f0}
+.hero.cyber-hero .kicker,.hero.ai-hero .kicker{color:#a5d6f2}
+.hero.cyber-hero .button,.hero.ai-hero .button{color:#ecf7fd;border-color:#8ab9d3;background:rgba(9,30,45,.32)}
+.hero.cyber-hero .button.primary,.hero.ai-hero .button.primary{background:#8bc0e1;color:#10283a;border-color:#8bc0e1}
+.hero.cyber-hero .button.primary:hover,.hero.ai-hero .button.primary:hover{background:#b1d9ef}
 
 /* Clean menu labels: no visible chevrons or toggle glyphs. */
 .nav-toggle{display:none}
