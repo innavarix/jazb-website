@@ -47,3 +47,8 @@
 .hero .button,.hero.is-light .button{color:#ecf7fd;border-color:#8ab9d3;background:rgba(9,30,45,.32)}
 .hero .button.primary,.hero.is-light .button.primary{background:#8bc0e1;color:#10283a;border-color:#8bc0e1}
 .hero .button.primary:hover,.hero.is-light .button.primary:hover{background:#b1d9ef}
+
+/* Clean menu labels: no visible chevrons or toggle glyphs. */
+.nav-toggle{display:none}
+.nav-item{gap:0}
+.nav-item.has-menu>a{cursor:pointer}
