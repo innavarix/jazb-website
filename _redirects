@@ -1,0 +1,28 @@
+# JAZB historical URL preservation after root consolidation.
+# Keep specific paths before catch-all rules.
+/archive/ /historical.html 301
+/archive/index.html / 301
+/archive/archive.html /historical.html 301
+/archive/framework.html /ai-governance.html 301
+/archive/architecture.html /ai-governance.html#border-jurisdiction 301
+/archive/crosswalk-nist-ai-rmf.html /crosswalks.html#published 301
+/archive/crosswalks.html /crosswalks.html 301
+/archive/research.html /research.html#historical-vtts 301
+/archive/publications.html /historical.html 301
+/archive/insights.html /insights.html 301
+/archive/about.html /about.html 301
+/archive/publication-terms.html /publication-terms.html 301
+/archive/index-animated.html /index-animated.html 301
+/archive/enforcement.html /historical.html#enforcement-v1-0 301
+/archive/foundational.html /historical.html#v1-0 301
+/archive/legacy.html /historical.html 301
+/archive/404.html /404.html 301
+/archive/* /historical.html 301
+/architecture.html /ai-governance.html#border-jurisdiction 301
+/archive.html /historical.html 301
+/crosswalk-nist-ai-rmf.html /crosswalks.html#published 301
+/enforcement.html /historical.html#enforcement-v1-0 301
+/foundational.html /historical.html#v1-0 301
+/framework.html /ai-governance.html 301
+/legacy.html /historical.html 301
+/new/* / 301
