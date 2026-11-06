@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#152b3b">
+<meta name="description" content="Friday Framework 001: What is a cybersecurity framework? Explore purpose, governance, controls, evidence, assurance, and how NIST, ISO, CIS, COBIT, and JAZB differ.">
+<link rel="canonical" href="https://jazbframework.org/friday-framework-001-what-is-a-cybersecurity-framework.html">
+<title>Friday Framework 001 | What Is a Cybersecurity Framework? | JAZB</title>
+<link rel="stylesheet" href="site.css?v=20261105-frosted-unified">
+<style>
+.article-wrap{max-width:880px;margin:0 auto;padding:0 30px}.article-meta{font-size:.83rem;color:#a7c8dc;letter-spacing:.04em;margin-bottom:15px}.article-prose{font-size:1.055rem;line-height:1.86}.article-prose h2{font-size:clamp(1.55rem,2.4vw,2.2rem);margin:40px 0 17px;color:#f5fafc}.article-prose h3{font-size:1.18rem;margin:24px 0 12px;color:#d6ebf8}.article-prose p{margin:0 0 20px}.article-prose ul{color:#cbd9df;padding-left:24px;margin:0 0 24px}.article-prose li{margin:0 0 12px}.article-prose a{color:#a9dbfa;text-decoration:underline;text-underline-offset:3px}.article-intro{font-size:1.2rem;color:#e0edf5}.article-quote{border-left:3px solid #8bc0e1;padding:14px 0 14px 24px;margin:30px 0;font-size:1.28rem;color:#f1f7fb;font-weight:650}.article-end{border-top:1px solid var(--line);padding-top:26px;margin-top:44px}.article-end .small{color:#aac0cd}.article-prose .list-questions{list-style:none;padding:0}.article-prose .list-questions li{padding:14px 18px;border:1px solid var(--line);border-radius:9px;background:#112a3b;margin-bottom:10px}.article-prose strong{color:#fff}@media(max-width:680px){.article-wrap{padding:0 22px}.article-prose{font-size:1rem}}
+</style></head>
+<body><header class="site-header"><a class="brand" href="index.html" aria-label="JAZB home"><img src="/assets/jazb-wordmark.png" alt="JAZB"></a>
+<nav class="nav" aria-label="Primary navigation"><div class="nav-item has-menu"><a href="frameworks.html">Frameworks</a><button class="nav-toggle" type="button" aria-label="Toggle Frameworks menu" aria-expanded="false" aria-haspopup="true">⌄</button><div class="nav-menu"><a href="ai-governance.html">AI Governance & Enforcement v3.0.0</a><a href="cybersecurity.html">Cybersecurity Framework v1.0.0</a></div></div><div class="nav-item has-menu"><a href="publications.html">Publications</a><button class="nav-toggle" type="button" aria-label="Toggle Publications menu" aria-expanded="false" aria-haspopup="true">⌄</button><div class="nav-menu"><a href="publications.html#current">Current Publications</a><a href="publications.html#release-notes">Release Notes</a><a href="historical.html">Historical Publications</a></div></div><div class="nav-item has-menu"><a href="research.html">Research</a><button class="nav-toggle" type="button" aria-label="Toggle Research menu" aria-expanded="false" aria-haspopup="true">⌄</button><div class="nav-menu"><a href="research.html#ai">VTT Exercises</a><a href="research.html#cyb">Cybersecurity Qualification</a><a href="crosswalks.html">Standards Crosswalks</a></div></div><a href="insights.html" aria-current="page">Insights</a><a href="about.html">About</a></nav></header>
+
+<main id="main">
+<section class="hero"><div class="container">
+<p class="kicker">Friday Framework · Issue 001 · November 6, 2026</p>
+<h1>What Is a<br><em>Cybersecurity Framework?</em></h1>
+<p class="hero-intro">A framework is not simply a checklist of products or controls. It is a way to connect security objectives, responsibility, risk, and evidence to the outcomes an organization needs.</p>
+<div class="buttons"><a class="button primary" href="#article">Read the article</a><a class="button" href="insights.html">All Insights</a></div>
+</div></section>
+<section class="section alt" id="article"><div class="article-wrap article-prose">
+<p class="article-meta">Friday Framework 001 · Foundations · Michael Costner · November 6, 2026</p>
+<p class="article-intro">Organizations can deploy firewalls, multifactor authentication, endpoint protection, monitoring platforms, and backups and still struggle to answer a fundamental question: <strong>How do all these measures support a coherent cybersecurity strategy?</strong></p>
+<p>The challenge is not necessarily a shortage of technology. It is often the absence of a consistent method for deciding what matters, assigning responsibility, selecting safeguards, and determining whether the intended results have been achieved. This is where a cybersecurity framework becomes useful.</p>
+
+<h2>Defining the framework</h2>
+<p>A cybersecurity framework provides a structured approach for addressing cybersecurity objectives and risks. It may define functions, domains, outcomes, principles, responsibilities, controls, or assessment expectations. The structure varies because frameworks are designed for different purposes.</p>
+<p>Some are outcome-oriented: they describe what organizations should achieve without prescribing one technology or implementation method. Others provide detailed controls, an information security management system, or governance and management objectives.</p>
+<p>That difference matters. A framework is not inherently a certification program, a deployment blueprint, or a guarantee that risk has been eliminated. It is a disciplined reference for decisions, implementation, evaluation, and improvement.</p>
+
+<h2>The questions every organization should confront</h2>
+<ul class="list-questions">
+<li><strong>What are we protecting?</strong> Which business services, systems, data, people, and dependencies matter most?</li>
+<li><strong>Who is accountable?</strong> Who approves risk decisions, operates safeguards, evaluates results, and responds when something fails?</li>
+<li><strong>What could go wrong?</strong> How could an event affect operations, stakeholders, safety, finances, or obligations?</li>
+<li><strong>What outcomes do we expect?</strong> Which risks should controls reduce, and what should those controls actually do?</li>
+<li><strong>How will we know?</strong> What evidence demonstrates that the intended outcomes were achieved?</li>
+<li><strong>What happens next?</strong> How will findings, failures, new threats, and changing dependencies affect subsequent decisions?</li>
+</ul>
+<p>An inventory of security tools may help answer only part of this. A sound cybersecurity program must connect the answers across technical, operational, and executive responsibilities.</p>
+
+<h2>Different frameworks, different lenses</h2>
+<h3>NIST Cybersecurity Framework 2.0</h3>
+<p><a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener noreferrer">NIST CSF 2.0</a> organizes cybersecurity outcomes around six Functions: Govern, Identify, Protect, Detect, Respond, and Recover. It is designed to help organizations understand and communicate cybersecurity risk and does not require a single prescribed implementation approach.</p>
+<h3>ISO/IEC 27001:2022</h3>
+<p><a href="https://www.iso.org/standard/27001" target="_blank" rel="noopener noreferrer">ISO/IEC 27001:2022</a> defines requirements for an information security management system (ISMS), including establishing, operating, maintaining, and continually improving that system. It also supports an established conformity assessment and certification context.</p>
+<h3>CIS Controls v8.1</h3>
+<p><a href="https://www.cisecurity.org/controls/v8-1" target="_blank" rel="noopener noreferrer">CIS Controls v8.1</a> presents prioritized cybersecurity safeguards. Its focus on practical protective actions makes it useful for organizations planning and improving concrete defensive measures.</p>
+<h3>COBIT 2019</h3>
+<p><a href="https://www.isaca.org/resources/cobit" target="_blank" rel="noopener noreferrer">COBIT 2019</a> addresses governance and management of enterprise information and technology. Its scope extends beyond cybersecurity alone and helps connect technology decisions with enterprise goals and accountability.</p>
+<p>These approaches overlap, but they are not interchangeable. An organization may use more than one, provided responsibilities, terminology, and evidence claims remain clear.</p>
+
+<h2>From documented controls to demonstrated results</h2>
+<p>Consider a security policy requiring timely removal of privileged access when an employee leaves. A written policy and a completed offboarding ticket indicate that a process exists and was followed administratively. They do not, by themselves, prove that every material access path was actually revoked.</p>
+<p>A more defensible conclusion might require verifying effective permissions, inherited group membership, active sessions, service credentials, or other relevant routes. The extent of verification should match the risk and the claim being made.</p>
+<p>This illustrates three distinct questions: <strong>Was the safeguard specified? Was it implemented? Was its intended behavior demonstrated?</strong> A useful framework helps organizations avoid treating those questions as equivalent.</p>
+
+<h2>Where JAZB enters the discussion</h2>
+<p>The <a href="cybersecurity.html">JAZB Cybersecurity Framework v1.0.0 (November 2026)</a> is a separate, independently authored research framework addressing enterprise cybersecurity governance and assurance. It specifies 21 domains and 126 normative requirements, supported by 338 assessment checks.</p>
+<p>Its particular emphasis is on accountable decisions, consequences to business services, dependencies across systems and suppliers, and assurance claims bounded by actual evidence. For example, a record showing that a remediation task was closed should not automatically establish that the relevant risk was reduced; material treatment outcomes should be verified against appropriate evidence.</p>
+<p>These ideas are not exclusive to JAZB. NIST, ISO, CIS, COBIT, and related standards already address significant parts of the landscape. The JAZB contribution being researched is a particular integration of consequence-aware governance, dependency analysis, and evidence interpretation, not an assertion of universal superiority.</p>
+<p><strong>Validation boundary:</strong> JAZB Cybersecurity Framework v1.0.0 was internally qualified using synthetic models and self-authored testing. Its 338 organizational acceptance checks had not been executed against an assessed organization as of publication. Its design claims should not be mistaken for independently demonstrated enterprise effectiveness.</p>
+
+<h2>The central lesson</h2>
+<div class="article-quote">Cybersecurity is not merely about possessing safeguards. It is about understanding what they are intended to accomplish, who is accountable for them, and what the evidence supports.</div>
+<p>A framework helps organize those questions. A mature security program goes further by translating them into decisions, operating practices, verification, and improvement. The most appropriate framework, or combination of frameworks, depends on the organization's objectives, obligations, exposure, and operating environment.</p>
+<p>Throughout the Friday Framework series, we will explore twelve cybersecurity disciplines, examine established approaches, compare strengths and limitations, and consider JAZB's research where relevant. We will apply the same expectation of evidence and precision to our own work that we apply to anyone else's.</p>
+
+<div class="article-end"><p class="meta">Next Friday · November 13, 2026</p><h3>What Is Governance and Accountability?</h3>
+<p>Who makes cybersecurity decisions, who must carry them out, and who is ultimately responsible for the consequences?</p>
+<p class="small"><strong>Version and editorial context:</strong> Framework descriptions reflect the versions named above and information available November 6, 2026. Later findings or framework revisions may be documented as dated editorial notes without silently replacing historical conclusions.</p>
+<p class="small"><strong>Research reference:</strong> <a href="https://doi.org/10.5281/zenodo.23979789" target="_blank" rel="noopener noreferrer">JAZB Cybersecurity Framework v1.0.0, November 2026</a>. This is an educational commentary, not an amendment to either JAZB framework's normative requirements.</p>
+<div class="buttons"><a class="button" href="insights.html">Return to Insights</a><a class="button" href="cybersecurity.html">Explore JAZB Cybersecurity</a></div>
+</div>
+</div></section></main>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+<div><p class="footer-brand">JAZB</p><p>Independent cybersecurity and AI governance research. Distinct framework families, preserved publication history, and explicit evidence boundaries.</p></div>
+<div><h3>Frameworks</h3><a href="ai-governance.html">AI Governance &amp; Enforcement</a><a href="cybersecurity.html">Cybersecurity</a><a href="publications.html">Publications</a><a href="historical.html">Historical Publications</a></div>
+<div><h3>Explore</h3><a href="research.html">Research</a><a href="crosswalks.html">Crosswalks</a><a href="insights.html">Insights</a><a href="about.html">About</a><a href="publication-terms.html">Publication Terms</a></div>
+<div class="footer-social"><h3>Follow JAZB</h3><a class="linkedin-link" href="https://www.linkedin.com/company/jazb-framework/" target="_blank" rel="noopener noreferrer" aria-label="Follow JAZB Framework on LinkedIn"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg><span>LinkedIn</span></a></div></div>
+<div class="copyright">© 2026 Michael Costner. All rights reserved. JAZB research is independently authored. No independent certification or production validation is implied by publication.</div>
+</div></footer><script src="site-nav.js" defer></script></body></html>
