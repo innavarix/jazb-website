@@ -1,9 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 790" role="img" aria-labelledby="title desc">
   <title id="title">JAZB Canonical Governance Architecture</title>
-  <desc id="desc">Enterprise Domain Authority establishes the human sovereign root. Authority flows to Governor Law, then branches into separate Internal and Border Jurisdictions. Internal Jurisdiction flows through Judge, Commissioner, and AGENT, with AGENT interfacing with humans and enterprise infrastructure. Border Jurisdiction flows through Port Authority, Port Director, and Customs AGENT, with Customs AGENT interfacing with external actors and transit infrastructure.</desc>
+  <desc id="desc">Enterprise Domain Authority establishes the human sovereign root. Authority flows to Governor Law, then branches into separate Internal and Border Jurisdictions. In the Internal Jurisdiction the Judge interprets Law for two separated lanes: Commissioner Law governs the AGENT (Assistant AGENT, or Executive Assistant AGENT where enabled), which interfaces with humans and enterprise infrastructure; Commandant Law governs the Inspector AGENT, which observes AGENT and human activity and refers material findings to the Judge. Judge orders take effect only through Independent Actuation. Border Jurisdiction flows through Port Authority, Port Director, and Customs AGENT, which inspects inbound and outbound passage and interfaces with external actors and transit infrastructure.</desc>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L10,5 L0,10 Z" fill="#5289AD"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#B7791F"/>
     </marker>
   </defs>
 
@@ -20,75 +23,114 @@
 
     <line x1="600" y1="232" x2="600" y2="276" stroke="#5289AD" stroke-width="2.5"/>
     <circle cx="600" cy="276" r="4" fill="#5289AD"/>
-    <path d="M600 276 H285 V315" fill="none" stroke="#5289AD" stroke-width="2.5" marker-end="url(#arrow)"/>
-    <path d="M600 276 H915 V315" fill="none" stroke="#5289AD" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <path d="M600 276 H320 V315" fill="none" stroke="#5289AD" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <path d="M600 276 H920 V315" fill="none" stroke="#5289AD" stroke-width="2.5" marker-end="url(#arrow)"/>
 
-    <rect x="20" y="330" width="530" height="360" rx="3" fill="#F4FCFB" fill-opacity="0.72" stroke="#A9BAC3"/>
+    <!-- INTERNAL JURISDICTION -->
+    <rect x="20" y="330" width="600" height="440" rx="3" fill="#F4FCFB" fill-opacity="0.72" stroke="#A9BAC3"/>
     <text x="48" y="362" font-size="13" font-weight="700" letter-spacing="2.2" fill="#5289AD">INTERNAL JURISDICTION</text>
-    <text x="48" y="388" font-size="14" fill="#526B79">Interpretation, local Law, and bounded operation</text>
+    <text x="48" y="388" font-size="14" fill="#526B79">Interpretation, local Law, bounded operation, and oversight</text>
 
-    <rect x="55" y="425" width="125" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
-    <text x="117.5" y="459" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1" fill="#243C4C">JUDGE</text>
-    <line x1="180" y1="454" x2="219" y2="454" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+    <!-- Judge -->
+    <rect x="45" y="470" width="125" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
+    <text x="107.5" y="497" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1" fill="#243C4C">JUDGE</text>
+    <text x="107.5" y="515" text-anchor="middle" font-size="9" font-weight="700" letter-spacing=".9" fill="#698696">AI INTERPRETATION</text>
 
-    <rect x="230" y="425" width="140" height="58" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
-    <text x="300" y="459" text-anchor="middle" font-size="13" font-weight="800" letter-spacing=".7" fill="#243C4C">COMMISSIONER</text>
-    <line x1="370" y1="454" x2="409" y2="454" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="170" y1="499" x2="192" y2="499" stroke="#5289AD" stroke-width="2"/>
+    <circle cx="192" cy="499" r="3.5" fill="#5289AD"/>
+    <path d="M192 499 V439 H205" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M192 499 V559 H205" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
 
-    <rect x="420" y="425" width="95" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
-    <text x="467.5" y="459" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1" fill="#243C4C">AGENT</text>
+    <!-- Operation lane -->
+    <rect x="215" y="410" width="140" height="58" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="285" y="437" text-anchor="middle" font-size="13" font-weight="800" letter-spacing=".7" fill="#243C4C">COMMISSIONER</text>
+    <text x="285" y="455" text-anchor="middle" font-size="9" font-weight="700" letter-spacing=".9" fill="#698696">HUMAN LAW</text>
+    <line x1="355" y1="439" x2="384" y2="439" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
 
-    <text x="55" y="522" font-size="12" font-weight="700" letter-spacing="1.2" fill="#698696">AI INTERPRETATION</text>
-    <text x="230" y="522" font-size="12" font-weight="700" letter-spacing="1.2" fill="#698696">HUMAN LAW</text>
-    <text x="420" y="522" font-size="12" font-weight="700" letter-spacing="1.2" fill="#698696">AI OPERATION</text>
+    <rect x="395" y="410" width="135" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
+    <text x="462.5" y="433" text-anchor="middle" font-size="14" font-weight="800" letter-spacing="1" fill="#243C4C">AGENT</text>
+    <text x="462.5" y="448" text-anchor="middle" font-size="9" font-weight="700" letter-spacing=".9" fill="#698696">AI OPERATION</text>
+    <text x="462.5" y="461" text-anchor="middle" font-size="9" fill="#698696">AA • XAA (optional)</text>
 
-    <line x1="467.5" y1="483" x2="467.5" y2="560" stroke="#5289AD" stroke-width="2"/>
-    <circle cx="467.5" cy="560" r="3.5" fill="#5289AD"/>
-    <path d="M467.5 560 H165 V592" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
-    <path d="M467.5 560 H405 V592" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+    <!-- Oversight lane -->
+    <rect x="215" y="530" width="140" height="58" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="285" y="557" text-anchor="middle" font-size="13" font-weight="800" letter-spacing=".7" fill="#243C4C">COMMANDANT</text>
+    <text x="285" y="575" text-anchor="middle" font-size="9" font-weight="700" letter-spacing=".9" fill="#698696">HUMAN LAW</text>
+    <line x1="355" y1="559" x2="384" y2="559" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
 
-    <rect x="55" y="602" width="220" height="60" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
-    <text x="165" y="627" text-anchor="middle" font-size="11" font-weight="800" letter-spacing=".8" fill="#243C4C">HUMAN INTERFACE</text>
-    <text x="165" y="646" text-anchor="middle" font-size="10" fill="#698696">End users • Operators</text>
+    <rect x="395" y="530" width="135" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
+    <text x="462.5" y="553" text-anchor="middle" font-size="13" font-weight="800" letter-spacing=".8" fill="#243C4C">INSPECTOR</text>
+    <text x="462.5" y="568" text-anchor="middle" font-size="9" font-weight="700" letter-spacing=".9" fill="#698696">AI OVERSIGHT</text>
+    <text x="462.5" y="581" text-anchor="middle" font-size="9" fill="#698696">IA • Point Policy</text>
 
-    <rect x="295" y="602" width="220" height="60" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
-    <text x="405" y="625" text-anchor="middle" font-size="10.8" font-weight="800" letter-spacing=".55" fill="#243C4C">ENTERPRISE INFRASTRUCTURE</text>
-    <text x="405" y="646" text-anchor="middle" font-size="10" fill="#698696">Systems • Network • Services</text>
+    <!-- Inspector observes AGENT -->
+    <line x1="462.5" y1="530" x2="462.5" y2="472" stroke="#B7791F" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrowAmber)"/>
+    <text x="471" y="504" font-size="9.5" font-weight="700" letter-spacing=".8" fill="#B7791F">OBSERVES</text>
 
-    <rect x="650" y="330" width="530" height="360" rx="3" fill="#F4FCFB" fill-opacity="0.72" stroke="#A9BAC3"/>
-    <text x="678" y="362" font-size="13" font-weight="700" letter-spacing="2.2" fill="#5289AD">BORDER JURISDICTION</text>
-    <text x="678" y="388" font-size="14" fill="#526B79">Interpretation, border Law, inspection, and lawful passage</text>
+    <!-- Inspector refers to Judge -->
+    <path d="M462.5 588 V622 H107.5 V532" fill="none" stroke="#B7791F" stroke-width="1.8" stroke-dasharray="5 4" marker-end="url(#arrowAmber)"/>
+    <text x="285" y="616" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing=".8" fill="#B7791F">REFERS FINDINGS</text>
 
-    <rect x="675" y="425" width="125" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
-    <text x="737.5" y="451" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".6" fill="#243C4C">PORT</text>
-    <text x="737.5" y="468" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".6" fill="#243C4C">AUTHORITY</text>
-    <line x1="800" y1="454" x2="829" y2="454" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+    <!-- AGENT to human interface and infrastructure -->
+    <path d="M530 439 H590 V655" fill="none" stroke="#5289AD" stroke-width="2"/>
+    <circle cx="590" cy="655" r="3.5" fill="#5289AD"/>
+    <path d="M590 655 H315 V667" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M590 655 H510 V667" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
 
-    <rect x="840" y="425" width="125" height="58" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
-    <text x="902.5" y="451" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".6" fill="#243C4C">PORT</text>
-    <text x="902.5" y="468" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".6" fill="#243C4C">DIRECTOR</text>
-    <line x1="965" y1="454" x2="994" y2="454" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+    <!-- Judge orders to Independent Actuation -->
+    <path d="M45 499 H32 V705 H38" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
 
-    <rect x="1005" y="425" width="125" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
-    <text x="1067.5" y="451" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".5" fill="#243C4C">CUSTOMS</text>
-    <text x="1067.5" y="468" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".5" fill="#243C4C">AGENT</text>
+    <rect x="45" y="677" width="170" height="60" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
+    <text x="130" y="702" text-anchor="middle" font-size="11" font-weight="800" letter-spacing=".7" fill="#243C4C">INDEPENDENT</text>
+    <text x="130" y="718" text-anchor="middle" font-size="11" font-weight="800" letter-spacing=".7" fill="#243C4C">ACTUATION</text>
 
-    <text x="675" y="522" font-size="11" font-weight="700" letter-spacing="1.1" fill="#698696">AI INTERPRETATION</text>
-    <text x="840" y="522" font-size="11" font-weight="700" letter-spacing="1.1" fill="#698696">HUMAN LAW</text>
-    <text x="1067.5" y="515" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="1.0" fill="#698696">AI INSPECTION</text>
-    <text x="1067.5" y="529" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="1.0" fill="#698696">&amp; ENFORCEMENT</text>
+    <rect x="230" y="677" width="170" height="60" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="315" y="702" text-anchor="middle" font-size="11" font-weight="800" letter-spacing=".8" fill="#243C4C">HUMAN INTERFACE</text>
+    <text x="315" y="721" text-anchor="middle" font-size="10" fill="#698696">End users • Operators</text>
 
-    <line x1="1067.5" y1="483" x2="1067.5" y2="560" stroke="#5289AD" stroke-width="2"/>
-    <circle cx="1067.5" cy="560" r="3.5" fill="#5289AD"/>
-    <path d="M1067.5 560 H795 V592" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
-    <path d="M1067.5 560 H1035 V592" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="415" y="677" width="190" height="60" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="510" y="700" text-anchor="middle" font-size="10.8" font-weight="800" letter-spacing=".55" fill="#243C4C">ENTERPRISE INFRASTRUCTURE</text>
+    <text x="510" y="721" text-anchor="middle" font-size="10" fill="#698696">Systems • Network • Services</text>
 
-    <rect x="685" y="602" width="220" height="60" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
-    <text x="795" y="627" text-anchor="middle" font-size="11" font-weight="800" letter-spacing=".8" fill="#243C4C">EXTERNAL INTERFACE</text>
-    <text x="795" y="646" text-anchor="middle" font-size="10" fill="#698696">Users • Services • Partners</text>
+    <!-- Actuation effects on infrastructure -->
+    <path d="M130 737 V752 H470 V741" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
 
-    <rect x="925" y="602" width="220" height="60" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
-    <text x="1035" y="625" text-anchor="middle" font-size="10.8" font-weight="800" letter-spacing=".55" fill="#243C4C">TRANSIT INFRASTRUCTURE</text>
-    <text x="1035" y="646" text-anchor="middle" font-size="10" fill="#698696">Network • Edge • ISP</text>
+    <!-- BORDER JURISDICTION -->
+    <rect x="660" y="330" width="520" height="440" rx="3" fill="#F4FCFB" fill-opacity="0.72" stroke="#A9BAC3"/>
+    <text x="688" y="362" font-size="13" font-weight="700" letter-spacing="2.2" fill="#5289AD">BORDER JURISDICTION</text>
+    <text x="688" y="388" font-size="14" fill="#526B79">Interpretation, border Law, inspection, and lawful passage</text>
+
+    <rect x="685" y="410" width="125" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
+    <text x="747.5" y="431" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".6" fill="#243C4C">PORT</text>
+    <text x="747.5" y="446" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".6" fill="#243C4C">AUTHORITY</text>
+    <text x="747.5" y="461" text-anchor="middle" font-size="9" font-weight="700" letter-spacing=".9" fill="#698696">AI INTERPRETATION</text>
+    <line x1="810" y1="439" x2="839" y2="439" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="850" y="410" width="125" height="58" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="912.5" y="431" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".6" fill="#243C4C">PORT</text>
+    <text x="912.5" y="446" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".6" fill="#243C4C">DIRECTOR</text>
+    <text x="912.5" y="461" text-anchor="middle" font-size="9" font-weight="700" letter-spacing=".9" fill="#698696">HUMAN LAW</text>
+    <line x1="975" y1="439" x2="1004" y2="439" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="1015" y="410" width="145" height="58" rx="2" fill="#E6F1F6" stroke="#5289AD"/>
+    <text x="1087.5" y="431" text-anchor="middle" font-size="12" font-weight="800" letter-spacing=".5" fill="#243C4C">CUSTOMS AGENT</text>
+    <text x="1087.5" y="446" text-anchor="middle" font-size="9" font-weight="700" letter-spacing=".8" fill="#698696">AI INSPECTION &amp;</text>
+    <text x="1087.5" y="458" text-anchor="middle" font-size="9" font-weight="700" letter-spacing=".8" fill="#698696">ENFORCEMENT</text>
+
+    <text x="1087.5" y="490" text-anchor="middle" font-size="10" fill="#526B79">Inbound • Outbound</text>
+
+    <line x1="1087.5" y1="498" x2="1087.5" y2="655" stroke="#5289AD" stroke-width="2"/>
+    <line x1="1087.5" y1="468" x2="1087.5" y2="478" stroke="#5289AD" stroke-width="2"/>
+    <circle cx="1087.5" cy="655" r="3.5" fill="#5289AD"/>
+    <path d="M1087.5 655 H795 V667" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M1087.5 655 H1045 V667" fill="none" stroke="#5289AD" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="685" y="677" width="220" height="60" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="795" y="702" text-anchor="middle" font-size="11" font-weight="800" letter-spacing=".8" fill="#243C4C">EXTERNAL INTERFACE</text>
+    <text x="795" y="721" text-anchor="middle" font-size="10" fill="#698696">Users • Services • Partners</text>
+
+    <rect x="935" y="677" width="220" height="60" rx="2" fill="#FFFFFF" fill-opacity="0.92" stroke="#9BAEB9"/>
+    <text x="1045" y="700" text-anchor="middle" font-size="10.8" font-weight="800" letter-spacing=".55" fill="#243C4C">TRANSIT INFRASTRUCTURE</text>
+    <text x="1045" y="721" text-anchor="middle" font-size="10" fill="#698696">Network • Edge • ISP</text>
   </g>
 </svg>
