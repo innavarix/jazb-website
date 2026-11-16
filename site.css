@@ -64,3 +64,23 @@
 
 /* Friday Framework articles */
 .article-wrap{max-width:880px;margin:0 auto;padding:0 30px}.article-meta{font-size:.83rem;color:#a7c8dc;letter-spacing:.04em;margin-bottom:15px}.article-prose{font-size:1.055rem;line-height:1.86}.article-prose h2{font-size:clamp(1.55rem,2.4vw,2.2rem);margin:40px 0 17px;color:#f5fafc}.article-prose h3{font-size:1.18rem;margin:24px 0 12px;color:#d6ebf8}.article-prose p{margin:0 0 20px}.article-prose ul{color:#cbd9df;padding-left:24px;margin:0 0 24px}.article-prose li{margin:0 0 12px}.article-prose a{color:#a9dbfa;text-decoration:underline;text-underline-offset:3px}.article-intro{font-size:1.2rem;color:#e0edf5}.article-quote{border-left:3px solid #8bc0e1;padding:14px 0 14px 24px;margin:30px 0;font-size:1.28rem;color:#f1f7fb;font-weight:650}.article-end{border-top:1px solid var(--line);padding-top:26px;margin-top:44px}.article-end .small{color:#aac0cd}.article-prose .list-questions{list-style:none;padding:0}.article-prose .list-questions li{padding:14px 18px;border:1px solid var(--line);border-radius:9px;background:#112a3b;margin-bottom:10px}.article-prose strong{color:#fff}@media(max-width:680px){.article-wrap{padding:0 22px}.article-prose{font-size:1rem}}
+
+/* Terms used on this page */
+.terms{margin-top:34px;padding:24px 28px;border:1px solid var(--line);border-radius:12px;background:#0f2433}
+.terms h3{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:#9bcbe9;margin-bottom:14px}
+.terms dl{display:grid;grid-template-columns:max-content 1fr;gap:10px 22px;margin:0}
+.terms dt{font-weight:800;color:#fff;font-size:.9rem}
+.terms dd{margin:0;color:#cbd9df;font-size:.9rem}
+a.term{text-decoration:underline dotted;text-underline-offset:3px;text-decoration-thickness:1px}
+@media(max-width:680px){.terms dl{grid-template-columns:1fr;gap:2px}.terms dd{margin-bottom:10px}}
+
+/* Framework comparison */
+.compare{overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+.compare table{width:100%;border-collapse:collapse;min-width:640px}
+.compare th,.compare td{text-align:left;vertical-align:top;padding:16px 20px;border-bottom:1px solid var(--line);font-size:.92rem}
+.compare thead th{font-size:1.05rem;color:#fff;background:#132d3e}
+.compare tbody th{width:20%;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#9bcbe9;font-weight:800}
+.compare td{color:#cbd9df}
+.compare tr:last-child>*{border-bottom:0}
+.compare td .buttons{margin-top:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
