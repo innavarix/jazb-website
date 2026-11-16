@@ -14,3 +14,5 @@
  document.addEventListener('click',event=>{if(!event.target.closest('.nav-item.has-menu'))close()});
  document.addEventListener('keydown',event=>{if(event.key==='Escape')close()});
 })();
+/* Phones: open wide diagrams centered on their content. */
+(()=>{const c=()=>{for(const d of document.querySelectorAll('.diagram-scroll')){d.scrollLeft=(d.scrollWidth-d.clientWidth)/2}};window.addEventListener('load',c)})();

@@ -12,7 +12,8 @@
 /archive/insights.html /insights.html 301
 /archive/about.html /about.html 301
 /archive/publication-terms.html /publication-terms.html 301
-/archive/index-animated.html /index-animated.html 301
+/archive/index-animated.html / 301
+/index-animated.html / 301
 /archive/enforcement.html /historical.html#enforcement-v1-0 301
 /archive/foundational.html /historical.html#v1-0 301
 /archive/legacy.html /historical.html 301

@@ -84,3 +84,22 @@ a.term{text-decoration:underline dotted;text-underline-offset:3px;text-decoratio
 .compare tr:last-child>*{border-bottom:0}
 .compare td .buttons{margin-top:0}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Layout: hero text shares the content edge of the page below it */
+.hero>.container{max-width:var(--max);margin:0 auto;padding:0 30px}
+.hero h1{max-width:760px;font-size:clamp(2.6rem,4.6vw,4.3rem)}
+.hero .hero-intro{max-width:640px}
+/* Day banner: keep the text area light so headlines never sit on the photo's busy side */
+.hero:before{background:linear-gradient(90deg,rgba(244,252,251,.95) 0%,rgba(244,252,251,.86) calc(50% - 80px),rgba(244,252,251,.38) calc(50% + 200px),rgba(244,252,251,.04) 100%)}
+@media(max-width:680px){
+  .hero>.container{padding:0 22px}
+  .hero:before{background:linear-gradient(180deg,rgba(244,252,251,.86),rgba(244,252,251,.93))}
+}
+
+/* Architecture diagram: swipe on phones, full-size link everywhere */
+.diagram-hint{display:none}
+@media(max-width:680px){
+  .diagram-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:10px}
+  .diagram-scroll img{min-width:860px}
+  .diagram-hint{display:inline}
+}
