@@ -57,3 +57,6 @@
 /* Editorial covers use their native aspect ratio. */
 .ix-art.ix-art-cover{padding:0;min-height:0;display:block;background:#102635}
 .ix-art-cover img{display:block;width:100%;height:auto;aspect-ratio:1200/628}
+
+.ix-feature-art.ix-feature-cover{padding:0;min-height:0;display:flex;justify-content:center;background:#eaf4f6}
+.ix-feature-cover img{display:block;width:100%;height:auto;aspect-ratio:1200/628}
