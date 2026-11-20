@@ -1,0 +1,55 @@
+/* Insights-only layout. Shared site styles remain unchanged. */
+.ix-page .ix-hero{min-height:460px;padding:76px 0}
+.ix-body{background:#edf4f6;color:#193446;padding:55px 0 76px}
+.ix-heading{font-size:clamp(1.7rem,3vw,2.45rem);margin:0 0 10px}
+.ix-sub{max-width:760px;margin:0 0 24px;color:#425e6e}
+.ix-series{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:26px 0 44px}
+.ix-series-item{display:flex;flex-direction:column;gap:7px;min-width:0;padding:23px 20px;border-radius:10px;color:#f5fbff;background:linear-gradient(145deg,#193a50,#102635);border:1px solid #42657b;transition:transform .15s,border-color .15s}
+.ix-series-item:nth-child(2){background:linear-gradient(145deg,#255473,#19384c)}
+.ix-series-item:nth-child(3){background:linear-gradient(145deg,#1b4553,#14313f)}
+.ix-series-item:nth-child(4){background:linear-gradient(145deg,#3a5266,#253b4d)}
+.ix-series-item:hover{transform:translateY(-2px);border-color:#8fc6e8}
+.ix-series-item strong{font-size:2.15rem;line-height:1.1;color:#c5e8fa;letter-spacing:.02em}
+.ix-series-item span{font-weight:750;font-size:1rem;line-height:1.3}
+.ix-series-item small{color:#d7e6ed;font-size:.82rem;line-height:1.55}
+.ix-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);background:#fff;border:1px solid #cedde4;border-radius:12px;overflow:hidden;box-shadow:0 8px 25px #1026350b;margin:23px 0 42px}
+.ix-feature-art,.ix-art{color:#f5fbff;background:linear-gradient(125deg,rgba(10,28,42,.94),rgba(21,62,86,.67)),url('/assets/arctic-aura.webp') center/cover;display:flex;flex-direction:column;justify-content:space-between;gap:12px}
+.ix-feature-art{padding:30px;min-height:255px}
+.ix-feature-art strong{font-size:clamp(1.9rem,3vw,3rem);line-height:1.07;letter-spacing:-.035em}
+.ix-feature-art span,.ix-art span{font-weight:750;font-size:.72rem;letter-spacing:.13em;color:#c5e8fa}
+.ix-feature-copy{padding:28px 30px;align-self:center}
+.ix-feature-copy h3{font-size:clamp(1.4rem,2.4vw,1.95rem);margin:12px 0}
+.ix-feature-copy p:not(.ix-tag):not(.ix-meta){color:#425e6e}
+.ix-tag{color:#286b8f!important;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;margin:0 0 8px}
+.ix-meta{font-size:.79rem;color:#4e6573!important;margin:12px 0}
+.ix-meta a{text-decoration:underline;text-underline-offset:2px}
+.ix-read{font-weight:750;font-size:.88rem;color:#195b80;display:inline-block;text-decoration:none}
+.ix-read:hover{text-decoration:underline;text-underline-offset:3px}
+.ix-filters{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 12px}
+.ix-filters[hidden],.ix-card[hidden]{display:none!important}
+.ix-filters button{font:inherit;font-size:.85rem;font-weight:700;cursor:pointer;color:#25485d;background:#fff;border:1px solid #a6bdca;border-radius:6px;padding:10px 15px}
+.ix-filters button:hover{background:#dcecf4}
+.ix-filters button[aria-pressed="true"]{background:#193a50;border-color:#193a50;color:white}
+.ix-filters button:focus-visible,.ix-series-item:focus-visible,.ix-read:focus-visible{outline:3px solid #286b8f;outline-offset:3px}
+.ix-count{font-size:.82rem;color:#4e6573!important;margin:12px 0 18px;min-height:1.2em}
+.ix-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px;align-items:stretch}
+.ix-card{display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #cedde4;border-radius:10px;overflow:hidden;box-shadow:0 4px 15px #10263508}
+.ix-art{min-height:126px;padding:19px}
+.ix-art strong{font-size:1.8rem;line-height:1.12}
+.ix-art-themes{background:linear-gradient(125deg,rgba(16,43,61,.92),rgba(47,95,123,.72)),url('/assets/arctic-reflection.webp') center/cover}
+.ix-art-research{background:linear-gradient(125deg,rgba(12,39,52,.95),rgba(28,77,88,.74)),url('/assets/arctic-aura.webp') center/cover}
+.ix-copy{padding:21px;display:flex;flex:1;flex-direction:column}
+.ix-copy h3{font-size:1.19rem;line-height:1.34;margin:5px 0 13px}
+.ix-copy .ix-summary{font-size:.93rem;color:#425e6e;margin:0 0 12px;flex:1}
+.ix-copy .ix-read{margin-top:7px}
+.ix-cta{display:flex;align-items:center;justify-content:space-between;gap:25px;background:#142e41;color:#f4faff;border-radius:10px;padding:30px;margin-top:42px}
+.ix-cta h2{font-size:clamp(1.3rem,2.5vw,1.9rem);margin:0 0 12px}
+.ix-cta p{color:#d4e4ed!important;margin-bottom:0}
+.ix-cta .eyebrow{color:#a4d2ed;margin-bottom:9px}
+.ix-cta .buttons{margin-top:0;flex-shrink:0}
+.ix-cta .button{color:#e9f5fa;border-color:#7da9c8}
+.ix-cta .button.primary{background:#8bc0e1;color:#10283a;border-color:#8bc0e1}
+.ix-page #series,.ix-page #browse,.ix-anchor{scroll-margin-top:100px}
+@media(max-width:900px){.ix-series,.ix-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ix-feature{grid-template-columns:1fr}.ix-feature-art{min-height:200px}.ix-cta{align-items:flex-start;flex-direction:column}}
+@media(max-width:550px){.ix-page .ix-hero{min-height:0;padding:58px 0}.ix-body{padding:42px 0 55px}.ix-series,.ix-grid{grid-template-columns:1fr}.ix-series-item{padding:19px}.ix-feature-copy,.ix-feature-art,.ix-cta{padding:22px}.ix-filters button{padding:9px 11px}.ix-art{min-height:110px}}
+@media(prefers-reduced-motion:reduce){.ix-series-item{transition:none}}
