@@ -53,3 +53,7 @@
 @media(max-width:900px){.ix-series,.ix-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ix-feature{grid-template-columns:1fr}.ix-feature-art{min-height:200px}.ix-cta{align-items:flex-start;flex-direction:column}}
 @media(max-width:550px){.ix-page .ix-hero{min-height:0;padding:58px 0}.ix-body{padding:42px 0 55px}.ix-series,.ix-grid{grid-template-columns:1fr}.ix-series-item{padding:19px}.ix-feature-copy,.ix-feature-art,.ix-cta{padding:22px}.ix-filters button{padding:9px 11px}.ix-art{min-height:110px}}
 @media(prefers-reduced-motion:reduce){.ix-series-item{transition:none}}
+
+/* Editorial covers use their native aspect ratio. */
+.ix-art.ix-art-cover{padding:0;min-height:0;display:block;background:#102635}
+.ix-art-cover img{display:block;width:100%;height:auto;aspect-ratio:1200/628}
