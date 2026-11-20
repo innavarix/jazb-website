@@ -60,3 +60,17 @@
 
 .ix-feature-art.ix-feature-cover{padding:0;min-height:0;display:flex;justify-content:center;background:#eaf4f6}
 .ix-feature-cover img{display:block;width:100%;height:auto;aspect-ratio:1200/628}
+
+/* Match the site's dark content sections beneath the light hero. Keep editorial cards light for readability. */
+.section.ix-body{background:#102535;color:#f2f7f8}
+.ix-body .ix-sub{color:#cbd9df}
+.ix-body .ix-count{color:#b9d0df!important}
+.ix-body .ix-card,.ix-body .ix-feature{color:#193446}
+.ix-body .ix-card p,.ix-body .ix-feature p{color:#425e6e}
+.ix-body .ix-card .ix-tag,.ix-body .ix-feature .ix-tag{color:#286b8f!important}
+.ix-body .ix-card .ix-meta,.ix-body .ix-feature .ix-meta{color:#4e6573!important}
+.ix-body .ix-filters button{background:#193a50;color:#e9f5fa;border-color:#658ca4}
+.ix-body .ix-filters button:hover{background:#255473}
+.ix-body .ix-filters button[aria-pressed="true"]{background:#8bc0e1;color:#10283a;border-color:#8bc0e1}
+.ix-body .ix-cta{border:1px solid #42657b}
+.ix-body .ix-filters button:focus-visible,.ix-body .ix-series-item:focus-visible{outline-color:#8cd5ff}
