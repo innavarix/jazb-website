@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="628" viewBox="0 0 1200 628" role="img" aria-labelledby="title">
+<title id="title">JAZB | Featured Insight: From JASB to JAZB</title>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#041324"/><stop offset=".55" stop-color="#071e35"/><stop offset="1" stop-color="#041426"/></linearGradient><linearGradient id="layer" x2="1" y2="1"><stop stop-color="#183d60"/><stop offset="1" stop-color="#0a223c"/></linearGradient><linearGradient id="line"><stop stop-color="#8ddaf5"/><stop offset="1" stop-color="#173b59" stop-opacity="0"/></linearGradient></defs>
+<rect width="1200" height="628" fill="url(#bg)"/>
+<g fill="url(#layer)" stroke="#28577a" stroke-width="1"><path d="M0 0H173L0 88Z"/><path d="M970 0H1200L970 110Z"/><path d="M1043 0H1200V71L1043 149Z"/><path d="M0 348L383 628H0Z" opacity=".45"/><path d="M750 546L1200 360V533L999 624Z"/><path d="M817 495L1200 323V485L1032 561Z"/><path d="M845 432L1200 288V432L1056 495Z"/><path d="M896 384L1200 260V370L1060 431Z" fill="#254c70"/></g>
+<g fill="none" stroke="#48a7d6" stroke-width=".8">
+<path d="M-20 425 C 180 440, 280 610, 480 510 S 700 390, 915 451" opacity="0.220"/>
+<path d="M-20 434 C 180 447, 280 607, 480 513 S 700 393, 915 451" opacity="0.247"/>
+<path d="M-20 443 C 180 454, 280 604, 480 516 S 700 396, 915 451" opacity="0.274"/>
+<path d="M-20 452 C 180 461, 280 601, 480 519 S 700 399, 915 451" opacity="0.301"/>
+<path d="M-20 461 C 180 468, 280 598, 480 522 S 700 402, 915 451" opacity="0.328"/>
+<path d="M-20 470 C 180 475, 280 595, 480 525 S 700 405, 915 451" opacity="0.355"/>
+<path d="M-20 479 C 180 482, 280 592, 480 528 S 700 408, 915 451" opacity="0.382"/>
+<path d="M-20 488 C 180 489, 280 589, 480 531 S 700 411, 915 451" opacity="0.409"/>
+<path d="M-20 497 C 180 496, 280 586, 480 534 S 700 414, 915 451" opacity="0.436"/>
+<path d="M-20 506 C 180 503, 280 583, 480 537 S 700 417, 915 451" opacity="0.463"/>
+<path d="M-20 515 C 180 510, 280 580, 480 540 S 700 420, 915 451" opacity="0.490"/>
+<path d="M-20 524 C 180 517, 280 577, 480 543 S 700 423, 915 451" opacity="0.517"/>
+<path d="M-20 533 C 180 524, 280 574, 480 546 S 700 426, 915 451" opacity="0.544"/>
+<path d="M-20 542 C 180 531, 280 571, 480 549 S 700 429, 915 451" opacity="0.571"/>
+<path d="M-20 551 C 180 538, 280 568, 480 552 S 700 432, 915 451" opacity="0.598"/>
+<path d="M-20 560 C 180 545, 280 565, 480 555 S 700 435, 915 451" opacity="0.625"/>
+<path d="M-20 569 C 180 552, 280 562, 480 558 S 700 438, 915 451" opacity="0.652"/>
+<path d="M-20 578 C 180 559, 280 559, 480 561 S 700 441, 915 451" opacity="0.679"/>
+</g>
+<!-- Fixed series label; editable article headline and keywords below. -->
+<text x="76" y="104" font-family="Arial,sans-serif" font-size="30" letter-spacing="6" fill="#f2f7fc">JAZB <tspan fill="#8ddaf5">|</tspan></text>
+<text x="76" y="153" font-family="Arial,sans-serif" font-size="27" letter-spacing="6" font-weight="600" fill="#8ddaf5">FEATURED INSIGHT</text>
+<text id="headline" x="72" y="273" font-family="Georgia,serif" font-size="95" fill="#f6f8fc">From JASB to JAZB</text>
+<rect x="77" y="310" width="390" height="4" fill="url(#line)"/>
+<text id="keywords" x="80" y="361" font-family="Arial,sans-serif" font-size="25" letter-spacing="5" fill="#f2f7fc">AUTHORITY <tspan fill="#8ddaf5">•</tspan> ORIGINS <tspan fill="#8ddaf5">•</tspan> ARCHITECTURE</text>
+</svg>
